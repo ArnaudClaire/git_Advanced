@@ -7,10 +7,10 @@ public class HelloWorld {
     public static void main(String[] args) {
         // Utilisation des constantes
         JFrame fenetre = new JFrame(Constantes.HELLO_WORLD_TITLE);
-        fenetre.setSize(200, 200);
+        fenetre.setSize(600, 200);
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JLabel label = new JLabel(Constantes.HELLO_WORLD_TEXT, SwingConstants.CENTER);
+        JLabel label = new JLabel(Constantes.HELLO_WORLD_TEXT, SwingConstants.LEFT);
         label.setOpaque(true);
         label.setBackground(Color.GREEN);
         label.setForeground(Color.BLUE); // Couleur du texte en bleu
