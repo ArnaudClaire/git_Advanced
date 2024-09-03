@@ -16,27 +16,26 @@ public class HelloWorld {
                 fenetre.setSize(600, 750);
                 fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-            // Créer un panneau avec un FlowLayout pour aligner les labels horizontalement
-            JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+                // Créer un panneau avec un FlowLayout pour aligner les labels horizontalement
+                JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
-            // Créer le label pour le texte "Hello World"
-            JLabel helloLabel = new JLabel(Constantes.HELLO_WORLD_TEXT, SwingConstants.CENTER);
-            helloLabel.setOpaque(true);
-            helloLabel.setBackground(Color.CYAN);
-            
-            // Créer le label pour la date du jour
-            String dateString = new SimpleDateFormat("dd MMMM yyyy").format(new Date());
-            JLabel dateLabel = new JLabel(dateString, SwingConstants.CENTER);
-            dateLabel.setOpaque(true);
-            dateLabel.setBackground(Color.LIGHT_GRAY);
+                // Créer le label pour le texte "Hello World"
+                JLabel helloLabel = new JLabel(Constantes.HELLO_WORLD_TEXT, SwingConstants.CENTER);
+                helloLabel.setOpaque(true);
+                helloLabel.setBackground(Color.CYAN);
 
-            // Ajouter les labels au panneau
-            panel.add(helloLabel);
-            panel.add(dateLabel);
+                // Créer le label pour la date du jour
+                String dateString = new SimpleDateFormat("dd MMMM yyyy").format(new Date());
+                JLabel dateLabel = new JLabel(dateString, SwingConstants.CENTER);
+                dateLabel.setOpaque(true);
+                dateLabel.setBackground(Color.LIGHT_GRAY);
 
-            // Ajouter le panneau à la fenêtre
-            fenetre.add(panel);
-            fenetre.setVisible(true);
-        });
-    }
+                // Ajouter les labels au panneau
+                panel.add(helloLabel);
+                panel.add(dateLabel);
+
+                // Ajouter le panneau à la fenêtre
+                fenetre.add(panel);
+                fenetre.setVisible(true);
+        };
 }
